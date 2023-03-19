@@ -1,0 +1,119 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/resets" as *;
+
+.video{
+
+
+  &__date {
+    margin: 0.8rem 0;
+    color: #afafaf;
+
+    @include tablet{
+      margin: 0rem;
+      
+    }
+  }
+
+  &__data {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+    }
+  
+    @include desktop {
+      margin: 0 0rem 1rem 11.25rem;
+    }
+  }
+
+  &__views {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1rem;
+
+
+    @include tablet {
+      margin: 0 2rem 0 0.5rem;
+    }
+
+    @include desktop {
+      margin: 0 2rem 0 0.5rem;
+      
+    }
+    &-img {
+      max-width: 2rem;
+      margin-right: 0.3rem;
+    }
+  }
+  
+
+
+  &__likes {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    &-img{
+      max-width: 2rem;
+      margin-right: 0.3rem;
+    }
+  }
+
+  &__description {
+    padding:0 1rem;
+    line-height: 1.5rem;
+    text-align: left;
+    margin-top: 1rem;
+
+    @include tablet {
+      line-height: 2rem;
+     margin-top: 1rem;
+    }
+      @include desktop {
+        margin: 0 0 1rem 0;
+      }
+    }
+  }
+
+
+.current {
+  &__video-channel {
+    font-weight: bold;
+    margin-right: 1rem;
+
+    &--cont{
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      
+      @include tablet {
+        flex-direction: row;
+      }
+    }
+  }
+
+  &__video-details{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 0.15rem solid #e1e1e1;
+    border-top: 0.15rem solid #e1e1e1;
+    justify-content: space-between;
+    margin:1rem 1rem;
+    padding: 1rem 0rem;
+    
+    @include tablet{
+      border-top: 0px;
+    }
+  }
+
+  &__video-title {
+    padding:0 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: left;
+   
+   
+  }
+}

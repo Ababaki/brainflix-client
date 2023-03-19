@@ -5,9 +5,7 @@ import Hero from '../../components/Hero/Hero';
 import MainVideo from '../../components/MainVideo/MainVideo';
 import axios from 'axios';
 
-const API_URL = "http://localhost:7070"; //"https://project-2-api.herokuapp.com" ?api_key=<key>
-const TEMP_API_URL = "https://project-2-api.herokuapp.com";
-const TEMP_KEY  = "309a7e05-42fd-4246-b6f1-359a0b80fa8f"; // delete later private keys shouldnt be in code
+const API_URL = "http://localhost:7070";
 
 const Home = () => {
   // [state, setState] = usState(initial value) reminder charity case 
@@ -18,7 +16,7 @@ const Home = () => {
 
   // runs after first render
   useEffect(() => {
-    axios.get(TEMP_API_URL + '/videos' + '?api_key=' + TEMP_KEY) // get all videos
+    axios.get(API_URL + '/videos') // get all videos
       .then(res => setVideos(res.data)) 
       .catch(error => console.log(error));
   }, []);
@@ -28,7 +26,7 @@ const Home = () => {
     // prevent using video[0] (default) only use it if no id in the url
     if(videos.length > 0){
       // condition ? result if condition is true : result if condition is false (ternary operator)
-      axios.get(TEMP_API_URL + '/videos/' + (id ? id : videos[0].id) + '?api_key=' + TEMP_KEY) // get video by id
+      axios.get(API_URL + '/videos/' + (id ? id : videos[0].id)) // get video by id
         .then(res => setActiveVideo(res.data))
         .catch(error => console.log(error));
     }

@@ -1,0 +1,155 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/resets" as *;
+
+.upload-page {
+
+    width: 100vw;
+    text-align: left;
+    padding: 1rem;
+
+    &__title {
+        @include tablet{
+        }
+        @include desktop{
+            border-bottom: 1px solid #e1e1e1;
+        }
+    }
+    @include desktop{
+        max-width: 1020px;
+        margin: 0 auto;
+    }
+}
+
+.success-cont{
+    color:#0095ff;
+    text-align: center;
+    font-size: x-large;
+ }
+
+ .btns {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 2rem 0;
+    
+    @include tablet {
+        flex-direction: row;
+        margin: 0 1rem;
+    }
+   
+
+    &-cancel {
+        border: none;
+        background-color: transparent;
+        margin: 1rem;
+        color: #0095ff;
+        cursor: pointer;
+        @include tablet{
+            margin-right: 4rem;
+        }
+
+        @include desktop {
+            
+            flex-direction: row;
+        }
+    }
+}
+
+
+ .upload-cont {
+
+    width: 100%;
+
+    @include desktop {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__thumbnail-title {
+        width: 100%;
+        color: #e1e1e1;
+        margin-top: 1rem;
+
+        @include tablet{
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+        }
+        
+        @include desktop{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            width: 55%;
+            color:#e1e1e1;
+            padding-right: 1rem;
+            max-height: 15.625rem;
+            border-bottom: 1px solid #e1e1e1;
+
+        }
+    }
+
+    &__photo {
+        width: 100%;
+        border-radius: 5px;
+        @include desktop {
+            //margin-bottom: 4.7rem;
+        }
+    }
+
+    &__info {
+
+        width: 100%;
+        
+        @include desktop {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            flex-wrap: wrap;
+
+        }
+    }
+    &__input-title {
+        width: 100%;
+        color: #e1e1e1;
+        margin-top: 1rem;
+    }
+
+    &__input-des {
+        width: 100%;
+        color: #e1e1e1;
+        padding-bottom:1.2rem;
+        border-bottom: 1px solid #e1e1e1;
+
+    }
+
+   &__field {
+        border-radius: 5px;
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid #e1e1e1;
+        background-color: #fafafa;
+        margin-bottom: 0.5rem;
+       
+    
+    }
+    &__field--des{
+        border-radius: 5px;
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid #e1e1e1;
+        background-color: #fafafa;
+        margin-bottom: 1.5rem;
+        width: 100%;
+        padding-bottom: 4rem;
+    }
+
+    &__label {
+        margin-bottom: 0.5rem;
+    }
+}
+

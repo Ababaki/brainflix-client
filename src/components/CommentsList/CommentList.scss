@@ -3,5 +3,10 @@
 .comment-sec__list{
   
     margin-top: 1rem;
+    padding: 1rem;
+
+    @include tablet {
+      padding: 1rem;
+    }
     
   }

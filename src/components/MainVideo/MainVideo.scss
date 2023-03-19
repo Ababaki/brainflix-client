@@ -73,6 +73,7 @@
     }
       @include desktop {
         margin: 0 0 1rem 0;
+        padding: 0;
       }
     }
   }
@@ -105,6 +106,10 @@
     
     @include tablet{
       border-top: 0px;
+      padding: 0rem 0rem; 
+    }
+    @include desktop {
+      margin:1rem 1rem 1rem 0;
     }
   }
 
@@ -113,7 +118,9 @@
     font-weight: bold;
     font-size: 1.5rem;
     text-align: left;
-   
+   @include desktop {
+    padding: 0;
+   }
    
   }
 }

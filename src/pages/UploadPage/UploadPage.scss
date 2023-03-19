@@ -32,11 +32,14 @@
     width: 100%;
     justify-content: flex-end;
     padding: 2rem 0;
+
     
     @include tablet {
         flex-direction: row;
         margin: 0 1rem;
+   
     }
+
    
 
     &-cancel {
@@ -45,8 +48,11 @@
         margin: 1rem;
         color: #0095ff;
         cursor: pointer;
+        text-align: center;
+        order: 1;
         @include tablet{
             margin-right: 4rem;
+            order: 0;
         }
 
         @include desktop {

@@ -7,7 +7,7 @@
       background: #0065ad;
     }
     background: #0095ff;
-    height: 2.5rem;
+    height: 2.8rem;
     
     width: 100%;
     
@@ -19,10 +19,14 @@
     cursor: pointer;
     img {
       padding-left: .625rem;
+      @include tablet {
+        max-width: 26px;
+        margin-right:0.35rem;
+      }
     }
     @include tablet {
-      width: 9.375rem;
-      font-size: 0.6rem;
+      width: 9.875rem;
+      font-size: 0.72rem;
       
     }
     &__text {

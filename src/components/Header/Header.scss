@@ -25,10 +25,7 @@
     margin: 1rem auto;
     flex-direction: row;
     height: 5rem;
-    justify-content: space-between;
-    // padding-bottom: 5rem;
-
-    
+    justify-content: space-between;    
   }
   
   &__logo-container{
@@ -66,7 +63,7 @@
   }
   
   &__search {
-    width: 88%;
+    width: 84%;
     height: 3rem;
     margin: 0.5rem 0;
     border-radius: 0.3rem;
@@ -78,6 +75,8 @@
       margin: 0;
       width: 50%;
       max-width: 20rem;
+      margin-right: 0.75rem;
+
     }
     @include desktop {
       width: 50%;
@@ -90,9 +89,11 @@
     width: 11%;
     border-radius: 50%;
     margin-left: 0.5rem;
+    order: 0;
     
     @include tablet {
-      margin-left: 0;
+      margin-left: 0.75rem;
+      order: 1;
     }
   }
   

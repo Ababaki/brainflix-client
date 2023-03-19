@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Video from "./Video"
+import Video from "../Video/Video"
 import "./VideoList.scss";
 
 const VideoList = ({ displayVideo, details, videoList }) => {

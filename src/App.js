@@ -1,9 +1,9 @@
 import './App.scss';
 import Header from "./components/Header/Header"
 import { BrowserRouter, Routes, Route} from "react-router-dom";
-import Upload from './pages/Upload';
-import Home from "./pages/Home";
-import ErrorPage from "./pages/ErrorPage"
+import Upload from './pages/UploadPage/UploadPage';
+import Home from "./pages/HomePage/Home";
+import ErrorPage from "./pages/ErrorPage/ErrorPage"
 
 function App() {
 

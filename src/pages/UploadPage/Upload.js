@@ -14,7 +14,8 @@ function Upload() {
     const navigate = useNavigate()
     console.log(formData)
     
-    const handleSubmit = () => {
+    const handleSubmit = (event) => {
+        event.preventDefault();
         setSuccess(true)
         // axios.post here to actually submit the form and upload a new video
        const redirect = setTimeout(() => {

@@ -21,3 +21,14 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+**/.icloud
+
+/src/components/CommentForm/.Comments.js.icloud
+/src/components/CommentForm/.CommentList.js.icloud
+/src/components/CommentForm/.Comments.scss.icloud
+/src/pages/.Upload.scss.icloud
+/src/components/VideoList/.Video.js.icloud
+/src/components/VideoList/.Video.scss.icloud
+/src/pages/.Home.js.icloud
+/src/pages/.Success.js.icloud
+/src/pages/.Upload.js.icloud

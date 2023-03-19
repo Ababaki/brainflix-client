@@ -1,4 +1,4 @@
-import "./Upload.scss"
+import "./UploadPage.scss"
 import thumbnail from "../../assets/images/Upload-video-preview.jpg";
 import iconPublish from "../../assets/icons/publish.svg"
 import Btn from "../../components/Button/Button"

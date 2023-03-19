@@ -32,3 +32,4 @@ yarn-error.log*
 /src/pages/.Home.js.icloud
 /src/pages/.Success.js.icloud
 /src/pages/.Upload.js.icloud
+src/components/Button/.btn.scss.icloud

@@ -1,0 +1,21 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/resets" as *;
+
+.video {
+    &__img {
+      height: auto;
+      width: 100%;
+      // margin: 0 0 2rem 0;
+      
+      background-color: black;
+      @include tablet {
+        height: 25rem;
+        width: 100%;
+        padding:0 2rem;
+      }
+      @include desktop {
+        height: 33.75rem;
+   
+      }
+    }
+  }
